@@ -9,41 +9,156 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      textDirection: TextDirection.ltr,
-      children: [
+    return Stack(
+      alignment: Alignment.topCenter,
+      children: <Widget>[
         Container(
-          color: Colors.blueGrey,
-          height: 120.0,
-          //width: 800.0,
-          margin: const EdgeInsets.all(5),
-          padding: const EdgeInsets.fromLTRB(400, 20, 400, 20),
-          child: const Text("Hello world", textDirection: TextDirection.ltr),
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('img/image-attractive.jpg'),
+              fit: BoxFit.fitHeight,
+              alignment: FractionalOffset.topCenter,
+            ),
+          ),
         ),
         Container(
-          color: Colors.blueGrey,
-          height: 120.0,
-          //width: 800.0,
-          margin: const EdgeInsets.all(5),
-          padding: const EdgeInsets.fromLTRB(400, 20, 400, 20),
-          child: const Text("Hello world", textDirection: TextDirection.ltr),
+          color: Colors.blue.withOpacity(0.2),
+        ),
+        const Text(
+          'Faites votre choix',
+          textDirection: TextDirection.ltr,
+          style: TextStyle(
+              color: Colors.white,
+              decoration: TextDecoration.none,
+              fontSize: 60.0,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Milkshake',
+              shadows: [
+                Shadow(
+                    offset: Offset(-2, -2),
+                    blurRadius: 5.0,
+                    color: Colors.pink),
+                Shadow(
+                    offset: Offset(-2, -2),
+                    blurRadius: 5.0,
+                    color: Colors.pink),
+                Shadow(
+                    offset: Offset(-2, -2),
+                    blurRadius: 5.0,
+                    color: Colors.pink),
+                Shadow(
+                    offset: Offset(-2, -2), blurRadius: 5.0, color: Colors.pink)
+              ]),
         ),
         Container(
-          color: Colors.blueGrey,
-          height: 120.0,
-          //width: 800.0,
-          margin: const EdgeInsets.all(5),
-          padding: const EdgeInsets.fromLTRB(400, 20, 400, 20),
-          child: const Text("Hello world", textDirection: TextDirection.ltr),
+          color: Colors.teal.withOpacity(0.2),
+          margin: EdgeInsets.all(130),
+          padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
+          child: Row(
+            textDirection: TextDirection.ltr,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white, width: 5.0),
+                  boxShadow: const [
+                    BoxShadow(color: Colors.lightBlueAccent, blurRadius: 15.0)
+                  ],
+                  shape: BoxShape.circle,
+                ),
+                height: 120.0,
+                //width: 800.0,
+                margin: const EdgeInsets.all(5),
+                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
+                child: const Text(
+                  "Choix numéro 1",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white, width: 5.0),
+                  boxShadow: const [
+                    BoxShadow(color: Colors.lightGreenAccent, blurRadius: 15.0)
+                  ],
+                  shape: BoxShape.circle,
+                ),
+                height: 120.0,
+                //width: 800.0,
+                margin: const EdgeInsets.all(5),
+                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
+                child: const Text(
+                  "Choix numéro 2",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
         Container(
-          color: Colors.blueGrey,
-          height: 120,
-          //width: 800.0,
-          margin: const EdgeInsets.all(5),
-          padding: const EdgeInsets.fromLTRB(400, 20, 400, 20),
-          child: const Text("Hello world", textDirection: TextDirection.ltr),
+          color: Colors.grey.withOpacity(0.2),
+          margin: EdgeInsets.all(130),
+          padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
+          child: Row(
+            textDirection: TextDirection.ltr,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white, width: 5.0),
+                  boxShadow: const [
+                    BoxShadow(color: Colors.lightBlueAccent, blurRadius: 15.0)
+                  ],
+                  shape: BoxShape.circle,
+                ),
+                height: 120.0,
+                //width: 800.0,
+                margin: const EdgeInsets.all(5),
+                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
+                child: const Text(
+                  "Choix numéro 3",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white, width: 5.0),
+                  boxShadow: const [
+                    BoxShadow(color: Colors.lightGreenAccent, blurRadius: 15.0)
+                  ],
+                  shape: BoxShape.circle,
+                ),
+                height: 120.0,
+                //width: 800.0,
+                margin: const EdgeInsets.all(5),
+                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
+                child: const Text(
+                  "Choix numéro 4",
+                  textDirection: TextDirection.ltr,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     );
