@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('img/image-attractive.jpg'),
+              image: AssetImage('img/image_01.jpg'),
               fit: BoxFit.fitHeight,
               alignment: FractionalOffset.topCenter,
             ),
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
         ),
         Container(
           color: Colors.teal.withOpacity(0.2),
-          margin: EdgeInsets.all(130),
+          margin: EdgeInsets.fromLTRB(130, 130, 130, 0),
           padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
           child: Row(
             textDirection: TextDirection.ltr,
@@ -64,7 +64,7 @@ class MyApp extends StatelessWidget {
                   boxShadow: const [
                     BoxShadow(color: Colors.lightBlueAccent, blurRadius: 15.0)
                   ],
-                  shape: BoxShape.circle,
+                  shape: BoxShape.rectangle,
                 ),
                 height: 120.0,
                 //width: 800.0,
@@ -86,7 +86,7 @@ class MyApp extends StatelessWidget {
                   boxShadow: const [
                     BoxShadow(color: Colors.lightGreenAccent, blurRadius: 15.0)
                   ],
-                  shape: BoxShape.circle,
+                  shape: BoxShape.rectangle,
                 ),
                 height: 120.0,
                 //width: 800.0,
@@ -107,7 +107,7 @@ class MyApp extends StatelessWidget {
         ),
         Container(
           color: Colors.grey.withOpacity(0.2),
-          margin: EdgeInsets.all(130),
+          margin: EdgeInsets.fromLTRB(120, 350, 130, 0),
           padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
           child: Row(
             textDirection: TextDirection.ltr,
@@ -117,9 +117,9 @@ class MyApp extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 5.0),
                   boxShadow: const [
-                    BoxShadow(color: Colors.lightBlueAccent, blurRadius: 15.0)
+                    BoxShadow(color: Colors.redAccent, blurRadius: 15.0)
                   ],
-                  shape: BoxShape.circle,
+                  shape: BoxShape.rectangle,
                 ),
                 height: 120.0,
                 //width: 800.0,
@@ -139,9 +139,9 @@ class MyApp extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 5.0),
                   boxShadow: const [
-                    BoxShadow(color: Colors.lightGreenAccent, blurRadius: 15.0)
+                    BoxShadow(color: Colors.deepPurpleAccent, blurRadius: 15.0)
                   ],
-                  shape: BoxShape.circle,
+                  shape: BoxShape.rectangle,
                 ),
                 height: 120.0,
                 //width: 800.0,
