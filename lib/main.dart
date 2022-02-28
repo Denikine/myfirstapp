@@ -10,32 +10,38 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      textDirection: TextDirection.ltr,
       children: [
-        Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-          Container(
-            color: Colors.blue,
-            height: 100.0,
-            width: 100.0,
-          ),
-          Container(
+        //Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+        Container(
+          color: Colors.blue,
+          height: 100.0,
+          width: 100.0,
+        ),
+        Expanded(
+          child: Container(
             color: Colors.red,
             height: 100.0,
             width: 100.0,
+            child: const Text(
+              "Hello World",
+            ),
           ),
-        ]),
-        Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-          Container(
-            color: Colors.yellow,
-            height: 100.0,
-            width: 100.0,
-          ),
-          Container(
-            color: Colors.purple,
-            height: 100.0,
-            width: 100.0,
-          ),
-        ]),
+        ),
+        //]),
+        // Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+        Container(
+          color: Colors.yellow,
+          height: 100.0,
+          width: 100.0,
+        ),
+        Container(
+          color: Colors.purple,
+          height: 100.0,
+          width: 100.0,
+        ),
+        // ]),
       ],
     );
   }
