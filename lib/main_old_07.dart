@@ -27,21 +27,19 @@ class MyApp extends StatelessWidget {
             //width: 800.0,
             margin: const EdgeInsets.all(10),
             padding: const EdgeInsets.fromLTRB(3, 5, 2, 5),
-            child: Container(
-                
-              ),
-            ),
-            // child: const Text(
-            //   "Hello World",
-            //   textDirection: TextDirection.ltr,
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontSize: 40,
-            //     fontWeight: FontWeight.bold,
-            //   ),
-            // ),
+            child: Container(),
           ),
+          // child: const Text(
+          //   "Hello World",
+          //   textDirection: TextDirection.ltr,
+          //   style: TextStyle(
+          //     color: Colors.white,
+          //     fontSize: 40,
+          //     fontWeight: FontWeight.bold,
+          //   ),
+          // ),
         ),
+
         // Container(
         //   color: Colors.yellow,
         //   height: 200.0,
