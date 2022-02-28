@@ -30,28 +30,30 @@ class MyApp extends StatelessWidget {
           style: TextStyle(
               color: Colors.white,
               decoration: TextDecoration.none,
-              fontSize: 60.0,
+              fontSize: 80.0,
               fontWeight: FontWeight.bold,
-              fontFamily: 'Milkshake',
+              fontFamily: 'BADABB',
               shadows: [
                 Shadow(
                     offset: Offset(-2, -2),
                     blurRadius: 5.0,
-                    color: Colors.pink),
+                    color: Colors.deepPurpleAccent),
                 Shadow(
                     offset: Offset(-2, -2),
                     blurRadius: 5.0,
-                    color: Colors.pink),
+                    color: Colors.deepPurpleAccent),
                 Shadow(
                     offset: Offset(-2, -2),
                     blurRadius: 5.0,
-                    color: Colors.pink),
+                    color: Colors.deepPurpleAccent),
                 Shadow(
-                    offset: Offset(-2, -2), blurRadius: 5.0, color: Colors.pink)
+                    offset: Offset(-2, -2),
+                    blurRadius: 5.0,
+                    color: Colors.deepPurpleAccent)
               ]),
         ),
         Container(
-          color: Colors.teal.withOpacity(0.2),
+          color: Colors.deepPurpleAccent.withOpacity(0.2),
           margin: EdgeInsets.fromLTRB(130, 130, 130, 0),
           padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
           child: Row(
@@ -62,7 +64,7 @@ class MyApp extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 5.0),
                   boxShadow: const [
-                    BoxShadow(color: Colors.lightBlueAccent, blurRadius: 15.0)
+                    BoxShadow(color: Colors.red, blurRadius: 15.0)
                   ],
                   shape: BoxShape.rectangle,
                 ),
@@ -74,17 +76,34 @@ class MyApp extends StatelessWidget {
                   "Choix numéro 1",
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent)
+                      ]),
                 ),
               ),
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 5.0),
                   boxShadow: const [
-                    BoxShadow(color: Colors.lightGreenAccent, blurRadius: 15.0)
+                    BoxShadow(color: Colors.blue, blurRadius: 15.0)
                   ],
                   shape: BoxShape.rectangle,
                 ),
@@ -96,17 +115,34 @@ class MyApp extends StatelessWidget {
                   "Choix numéro 2",
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent)
+                      ]),
                 ),
               ),
             ],
           ),
         ),
         Container(
-          color: Colors.grey.withOpacity(0.2),
+          color: Colors.deepPurpleAccent.withOpacity(0.2),
           margin: EdgeInsets.fromLTRB(120, 350, 130, 0),
           padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
           child: Row(
@@ -117,7 +153,7 @@ class MyApp extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 5.0),
                   boxShadow: const [
-                    BoxShadow(color: Colors.redAccent, blurRadius: 15.0)
+                    BoxShadow(color: Colors.yellow, blurRadius: 15.0)
                   ],
                   shape: BoxShape.rectangle,
                 ),
@@ -129,17 +165,34 @@ class MyApp extends StatelessWidget {
                   "Choix numéro 3",
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent)
+                      ]),
                 ),
               ),
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 5.0),
                   boxShadow: const [
-                    BoxShadow(color: Colors.deepPurpleAccent, blurRadius: 15.0)
+                    BoxShadow(color: Colors.green, blurRadius: 15.0)
                   ],
                   shape: BoxShape.rectangle,
                 ),
@@ -151,10 +204,27 @@ class MyApp extends StatelessWidget {
                   "Choix numéro 4",
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      shadows: [
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent),
+                        Shadow(
+                            offset: Offset(-2, -2),
+                            blurRadius: 5.0,
+                            color: Colors.deepPurpleAccent)
+                      ]),
                 ),
               ),
             ],
