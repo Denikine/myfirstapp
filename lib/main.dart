@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
       //home: ShowScaffold_v3(), // Drawer
       //home: ShowScaffold_v4(), // AppBar
       //home: ShowScaffold_v5(), // FloatingActionButton
-      home: Button_v1(), // Button
+      //home: Button_v1(), // Button
       //home: Home(), // Exemple
       //home: PiggyBankP1(), // Exercice Piggy Bank - Ecran 1
-      //home: PiggyBankP2(), // Exercice Piggy Bank - Ecran 2
+      home: PiggyBankP2(), // Exercice Piggy Bank - Ecran 2
 
       //home: ShowCard_v1(), // Card
       //home: ShowCard_v2(), // Card - régorganisation du code
