@@ -1,236 +1,41 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/layout/all_layout.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.topCenter,
-      children: <Widget>[
-        Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('img/image_01.jpg'),
-              fit: BoxFit.fitHeight,
-              alignment: FractionalOffset.topCenter,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.blue.withOpacity(0.2),
-        ),
-        const Text(
-          'Faites votre choix',
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-              color: Colors.white,
-              decoration: TextDecoration.none,
-              fontSize: 80.0,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'BADABB',
-              shadows: [
-                Shadow(
-                    offset: Offset(-2, -2),
-                    blurRadius: 5.0,
-                    color: Colors.deepPurpleAccent),
-                Shadow(
-                    offset: Offset(-2, -2),
-                    blurRadius: 5.0,
-                    color: Colors.deepPurpleAccent),
-                Shadow(
-                    offset: Offset(-2, -2),
-                    blurRadius: 5.0,
-                    color: Colors.deepPurpleAccent),
-                Shadow(
-                    offset: Offset(-2, -2),
-                    blurRadius: 5.0,
-                    color: Colors.deepPurpleAccent)
-              ]),
-        ),
-        Container(
-          color: Colors.deepPurpleAccent.withOpacity(0.2),
-          margin: EdgeInsets.fromLTRB(130, 130, 130, 0),
-          padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
-          child: Row(
-            textDirection: TextDirection.ltr,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 5.0),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.red, blurRadius: 15.0)
-                  ],
-                  shape: BoxShape.rectangle,
-                ),
-                height: 120.0,
-                //width: 800.0,
-                margin: const EdgeInsets.all(5),
-                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
-                child: const Text(
-                  "Choix numéro 1",
-                  textDirection: TextDirection.ltr,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent)
-                      ]),
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 5.0),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.blue, blurRadius: 15.0)
-                  ],
-                  shape: BoxShape.rectangle,
-                ),
-                height: 120.0,
-                //width: 800.0,
-                margin: const EdgeInsets.all(5),
-                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
-                child: const Text(
-                  "Choix numéro 2",
-                  textDirection: TextDirection.ltr,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent)
-                      ]),
-                ),
-              ),
-            ],
-          ),
-        ),
-        Container(
-          color: Colors.deepPurpleAccent.withOpacity(0.2),
-          margin: EdgeInsets.fromLTRB(120, 350, 130, 0),
-          padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
-          child: Row(
-            textDirection: TextDirection.ltr,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 5.0),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.yellow, blurRadius: 15.0)
-                  ],
-                  shape: BoxShape.rectangle,
-                ),
-                height: 120.0,
-                //width: 800.0,
-                margin: const EdgeInsets.all(5),
-                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
-                child: const Text(
-                  "Choix numéro 3",
-                  textDirection: TextDirection.ltr,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent)
-                      ]),
-                ),
-              ),
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 5.0),
-                  boxShadow: const [
-                    BoxShadow(color: Colors.green, blurRadius: 15.0)
-                  ],
-                  shape: BoxShape.rectangle,
-                ),
-                height: 120.0,
-                //width: 800.0,
-                margin: const EdgeInsets.all(5),
-                padding: const EdgeInsets.fromLTRB(40, 40, 40, 40),
-                child: const Text(
-                  "Choix numéro 4",
-                  textDirection: TextDirection.ltr,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent),
-                        Shadow(
-                            offset: Offset(-2, -2),
-                            blurRadius: 5.0,
-                            color: Colors.deepPurpleAccent)
-                      ]),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
+    return const MaterialApp(
+      title: 'Première application',
+      //theme: ThemeData(primarySwatch: Colors.orange),
+      debugShowCheckedModeBanner: false,
+      //home: ShowContainer(),
+      //home: ShowPadding(),
+      //home: ShowExpanded(),
+      //home: ShowStack(),
+      //home: ShowScaffold_v1(), // body
+      //home: ShowScaffold_v2(), // ButtonNavigationBar
+      //home: ShowScaffold_v3(), // Drawer
+      //home: ShowScaffold_v4(), // AppBar
+      //home: ShowScaffold_v5(), // FloatingActionButton
+      home: Button_v1(), // Button
+      //home: Home(), // Exemple
+      //home: PiggyBankP1(), // Exercice Piggy Bank - Ecran 1
+      //home: PiggyBankP2(), // Exercice Piggy Bank - Ecran 2
+
+      //home: ShowCard_v1(), // Card
+      //home: ShowCard_v2(), // Card - régorganisation du code
+      //home: ShowCard_v3(), // InkWell
+
+      //home: MyCard(), // Statefull widget
+      //home: MyCard2(), // Affichage dynamique depuis une liste
+      //home: MyCard3(), // Callback
+      //home: MyCard4(), // ListView
+      //home: MyCard5(), // ListView + constructeur nommé builder
+      //home: MyCard6(), // ListView + constructeur nommé separated
     );
   }
 }
