@@ -32,10 +32,10 @@ class _MyCardState extends State<MyCard> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
 // Op´erateur spread pour passer d'un array `a une liste
-            ...cards.map((c) {
-              return CardLanguage(
-                  message: c['m'], fontsize: c['fs'], color: c['col']);
-            })
+            //...cards.map((c) {
+            //  return CardLanguage(
+            //      message: c['m'], fontsize: c['fs'], color: c['col']);
+            //})
           ],
         ),
       ),
