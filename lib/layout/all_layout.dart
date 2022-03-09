@@ -10,3 +10,4 @@ export 'package:myfirstapp/layout/Button/button_v1.dart';
 export 'package:myfirstapp/layout/PiggyBank/piggybank_p1.dart';
 export 'package:myfirstapp/layout/PiggyBank/piggybank_p2.dart';
 export 'package:myfirstapp/layout/Card/card.dart';
+export 'package:myfirstapp/layout/Card/mycard.dart';

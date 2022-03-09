@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Première application',
       theme: ThemeData(primarySwatch: Colors.orange),
       debugShowCheckedModeBanner: false,
-      home: ShowCard(),
+      home: MyCard(),
     );
   }
 }
