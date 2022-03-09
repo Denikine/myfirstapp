@@ -11,3 +11,5 @@ export 'package:myfirstapp/layout/PiggyBank/piggybank_p1.dart';
 export 'package:myfirstapp/layout/PiggyBank/piggybank_p2.dart';
 export 'package:myfirstapp/layout/Card/card.dart';
 export 'package:myfirstapp/layout/Card/mycard.dart';
+export 'package:myfirstapp/layout/Grid/grid.dart';
+export 'package:myfirstapp/layout/Grid/grid_black.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/layout/Grid/grid.dart';
 import 'package:myfirstapp/layout/all_layout.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Première application',
       theme: ThemeData(primarySwatch: Colors.orange),
       debugShowCheckedModeBanner: false,
-      home: MyCard(),
+      home: MyView(),
     );
   }
 }
