@@ -1078,8 +1078,8 @@ class _MyViewState extends State<MyView> {
     {'back': 'img/black.png', 'press': false},
     {'back': 'img/black.png', 'press': false},
   ];
-  void press(card) {
-    int index = cases.indexOf(card);
+  void press(cases) {
+    int index = cases.indexOf(cases);
     setState(() {
       cases[index]['press'] = !cases[index]['press'];
     });
@@ -1089,9 +1089,12 @@ class _MyViewState extends State<MyView> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      padding: const EdgeInsets.fromLTRB(30, 10, 20, 30),
+      margin: const EdgeInsets.fromLTRB(30, 10, 20, 30),
+      //padding: const EdgeInsets.fromLTRB(30, 10, 20, 30),
       child: GridView.count(
-        crossAxisCount: 20,
+        primary: false,
+        padding: const EdgeInsets.all(0),
+        crossAxisCount: 50,
         children: [
           ...cases.map((c) {
             return GridBlack(
