@@ -66,6 +66,15 @@ flutter:
   - google_fonts/
   #   - images/a_dot_ham.jpeg
   fonts:
+  - family: Montserrat
+    fonts:
+    - asset: fonts/Montserrat.TTF
+  - family: Fredoka
+    fonts:
+    - asset: fonts/Fredoka.TTF
+  - family: Garamond
+    fonts:
+    - asset: fonts/Garamond.TTF
   - family : BADABB
     fonts:
       - asset : fonts/BADABB.TTF

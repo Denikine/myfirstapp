@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class DeliverLanguage extends StatelessWidget {
+class BirthdayLanguage extends StatelessWidget {
   final String title;
   final String message;
   //final String background;
@@ -9,7 +9,7 @@ class DeliverLanguage extends StatelessWidget {
   final VoidCallback updatePressed; // fonction qui ne retourne rien
   final String white = 'img/white.png';
   final String pic;
-  DeliverLanguage(
+  BirthdayLanguage(
       {required this.title,
       required this.message,
       required this.pic,

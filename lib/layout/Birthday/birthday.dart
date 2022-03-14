@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:myfirstapp/layout/Delivery/delivery_lang.dart';
+import 'package:myfirstapp/layout/Birthday/birthday_lang.dart';
 
 // Premier widget Stateful : ListView + constructeur nomm´e
-class MyDeliver extends StatefulWidget {
-  const MyDeliver({Key? key}) : super(key: key);
+class MyBirthday extends StatefulWidget {
+  const MyBirthday({Key? key}) : super(key: key);
 // DATA FINAL (widget.name pour y acc´eder depuis le State)
   @override
-  _MyDeliverState createState() {
-    return _MyDeliverState();
+  _MyBirthdayState createState() {
+    return _MyBirthdayState();
   }
 }
 
-class _MyDeliverState extends State<MyDeliver> {
+class _MyBirthdayState extends State<MyBirthday> {
 // DATA MODIFIABLE
   List cards = [
     {
@@ -80,7 +80,7 @@ class _MyDeliverState extends State<MyDeliver> {
 // ListView.separated : Construction des widgets visibles + s´eparateur
         child: ListView.separated(
           itemBuilder: (context, i) {
-            return DeliverLanguage(
+            return BirthdayLanguage(
               title: cards[i]['t'],
               message: cards[i]['m'],
               //background: cards[i]['back'],
@@ -104,5 +104,3 @@ class _MyDeliverState extends State<MyDeliver> {
     );
   }
 }
-
-constText() {}

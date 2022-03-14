@@ -14,3 +14,5 @@ export 'package:myfirstapp/layout/Card/mycard.dart';
 export 'package:myfirstapp/layout/Grid/grid.dart';
 export 'package:myfirstapp/layout/Grid/grid_black.dart';
 export 'package:myfirstapp/layout/Delivery/delivery.dart';
+export 'package:myfirstapp/layout/Birthday/birthday.dart';
+export 'package:myfirstapp/layout/Birthday/birthday_lang.dart';

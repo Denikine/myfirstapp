@@ -36,7 +36,8 @@ class MyApp extends StatelessWidget {
       //home: MyCard4(), // ListView
       //home: MyCard5(), // ListView + constructeur nommé builder
       //home: MyCard6(), // ListView + constructeur nommé separated
-      home: MyDeliver(), // Delivery Minute design
+      //home: MyDeliver(), // Delivery Minute design
+      home: MyBirthday(),
     );
   }
 }
