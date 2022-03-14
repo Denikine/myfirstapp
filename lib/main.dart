@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Première application',
+      title: 'BirthDays',
       //theme: ThemeData(primarySwatch: Colors.orange),
       debugShowCheckedModeBanner: false,
       //home: ShowContainer(),
@@ -37,7 +37,8 @@ class MyApp extends StatelessWidget {
       //home: MyCard5(), // ListView + constructeur nommé builder
       //home: MyCard6(), // ListView + constructeur nommé separated
       //home: MyDeliver(), // Delivery Minute design
-      home: BirthdayHome(),
+      //home: BirthdayHome(), // background & logo
+      home: BirthdayWelcome(), // background & logo
     );
   }
 }
