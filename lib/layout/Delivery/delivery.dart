@@ -18,7 +18,14 @@ class _MyDeliverState extends State<MyDeliver> {
       't': 'Pizza aux champignons',
       'm':
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum ante velit, ac fermentum nunc bibendum non.',
-      'back': 'img/white.png',
+      'p': 'img/Image 2.png',
+      'press': false
+    },
+    {
+      't': 'Pizza aux olives',
+      'm':
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum ante velit, ac fermentum nunc bibendum non.',
+      'p': 'img/Image 2.png',
       'press': false
     }
   ];
@@ -33,7 +40,12 @@ class _MyDeliverState extends State<MyDeliver> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Delivery Minute'),
+          title: const Text(
+            'Delivery Minute',
+            style: TextStyle(
+              color: Colors.black,
+            ),
+          ),
           centerTitle: true,
           backgroundColor: Color.fromARGB(0, 255, 196, 0),
           actions: [
@@ -54,7 +66,8 @@ class _MyDeliverState extends State<MyDeliver> {
             return DeliverLanguage(
               title: cards[i]['t'],
               message: cards[i]['m'],
-              background: cards[i]['back'],
+              //background: cards[i]['back'],
+              pic: cards[i]['p'],
               pressed: cards[i]['press'],
               updatePressed: () {
                 press(cards[i]);
@@ -66,7 +79,7 @@ class _MyDeliverState extends State<MyDeliver> {
 // R´esultat comparable au widget SizedBox
             return const Divider(
               height: 50,
-              thickness: 5,
+              thickness: 1,
             );
           },
         ),
