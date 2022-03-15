@@ -15,38 +15,42 @@ class BirthdayWelcome extends StatefulWidget {
 class _BirthdayWelcomeState extends State<BirthdayWelcome> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        Row(
-          children: [
-            Container(
-              height: 90,
-              width: 90,
-              color: Color.fromARGB(0, 255, 255, 255),
-              child: SvgPicture.asset(
-                'img/birthday/cupcake.svg',
-                color: Colors.white,
-                semanticsLabel: "Birthdays logo",
-              ),
-            ),
-            Text(
-              'BirthDays',
-              textAlign: TextAlign.center,
-              style: GoogleFonts.pacifico(
-                textStyle: const TextStyle(
-                  fontSize: 70,
-                  color: Color.fromARGB(255, 255, 255, 255),
-                  fontWeight: FontWeight.normal,
-                  decoration: TextDecoration.none,
+    return Scaffold(
+      body: Center(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Container(
+            alignment: Alignment.center,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  height: 90,
+                  width: 90,
+                  color: Color.fromARGB(0, 255, 255, 255),
+                  child: SvgPicture.asset(
+                    'img/birthday/cupcake.svg',
+                    color: Color.fromARGB(255, 236, 105, 28),
+                    semanticsLabel: "Birthdays logo",
+                  ),
                 ),
-              ),
+                Text(
+                  'BirthDays',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.pacifico(
+                    textStyle: const TextStyle(
+                      fontSize: 90,
+                      color: Color.fromARGB(255, 230, 100, 25),
+                      fontWeight: FontWeight.normal,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
-        Row(),
-        Row()
-      ],
+          ),
+          Text()
+        ]),
+      ),
     );
   }
 }
