@@ -47,96 +47,187 @@ class _BirthdayWelcomeState extends State<BirthdayWelcome> {
                     ),
                   ),
                 ),
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Column(
-                        //crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Row(
-                            children: [
-                              Text(
-                                'You will',
-                                style: GoogleFonts.baskervville(
-                                  textStyle: const TextStyle(
-                                    fontSize: 24,
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontWeight: FontWeight.bold,
-                                    decoration: TextDecoration.none,
+                Stack(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          //crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'You will',
+                                  style: GoogleFonts.baskervville(
+                                    textStyle: const TextStyle(
+                                      fontSize: 24,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold,
+                                      decoration: TextDecoration.none,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Text(
-                            'remember',
-                            style: GoogleFonts.baskervville(
-                              textStyle: const TextStyle(
-                                backgroundColor:
-                                    Color.fromARGB(255, 236, 105, 28),
-                                fontSize: 24,
-                                color: Color.fromARGB(255, 255, 255, 255),
-                                fontWeight: FontWeight.bold,
-                                decoration: TextDecoration.none,
+                              ],
+                            ),
+                            Text(
+                              'remember',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 236, 105, 28),
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
-                          ),
-                          Text(
-                            'of your',
-                            style: GoogleFonts.baskervville(
-                              textStyle: const TextStyle(
-                                fontSize: 24,
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                fontWeight: FontWeight.bold,
-                                decoration: TextDecoration.none,
+                            Text(
+                              'of your',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              ' always',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 236, 105, 28),
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
-                          )
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            ' always',
-                            style: GoogleFonts.baskervville(
-                              textStyle: const TextStyle(
-                                backgroundColor:
-                                    Color.fromARGB(255, 236, 105, 28),
-                                fontSize: 24,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                decoration: TextDecoration.none,
+                            Text(
+                              ' the birthdays',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
-                          ),
-                          Text(
-                            ' the birthdays',
-                            style: GoogleFonts.baskervville(
-                              textStyle: const TextStyle(
-                                fontSize: 24,
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                fontWeight: FontWeight.bold,
-                                decoration: TextDecoration.none,
+                            Text(
+                              ' loved ones',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          //crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  'You will',
+                                  style: GoogleFonts.baskervville(
+                                    textStyle: const TextStyle(
+                                      fontSize: 24,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontWeight: FontWeight.bold,
+                                      decoration: TextDecoration.none,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Text(
+                              'remember',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 236, 105, 28),
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
-                          ),
-                          Text(
-                            ' loved ones',
-                            style: GoogleFonts.baskervville(
-                              textStyle: const TextStyle(
-                                fontSize: 24,
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                fontWeight: FontWeight.bold,
-                                decoration: TextDecoration.none,
+                            Text(
+                              'of your',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              ' always',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 236, 105, 28),
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
+                            Text(
+                              ' the birthdays',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              ' loved ones',
+                              style: GoogleFonts.baskervville(
+                                textStyle: const TextStyle(
+                                  fontSize: 24,
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.none,
+                                ),
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ],
                 ),
                 // Text(
                 //   'You will always remember the birthdays of your loved ones',
@@ -234,12 +325,22 @@ class _BirthdayWelcomeState extends State<BirthdayWelcome> {
                 const SizedBox(height: 30),
                 ElevatedButton(
                   onPressed: () {},
-                  child: const Text('JOIN US'),
+                  child: Text(
+                    'JOIN US',
+                    style: GoogleFonts.baskervville(
+                      textStyle: const TextStyle(
+                        fontSize: 24,
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                  ),
                   style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
                       ),
-                      primary: Color.fromARGB(255, 0, 0, 0),
+                      primary: Color.fromARGB(255, 255, 255, 255),
                       padding:
                           EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                       textStyle:
