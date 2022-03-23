@@ -82,7 +82,7 @@ class _BirthdayConnectState extends State<BirthdayConnect> {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.baskervville(
                     textStyle: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.none,
@@ -118,7 +118,7 @@ class _BirthdayConnectState extends State<BirthdayConnect> {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.baskervville(
                     textStyle: const TextStyle(
-                      fontSize: 15,
+                      fontSize: 20,
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.none,
