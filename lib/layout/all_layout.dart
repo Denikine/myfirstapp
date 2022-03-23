@@ -18,3 +18,4 @@ export 'package:myfirstapp/layout/Birthday/birthdayhome.dart';
 export 'package:myfirstapp/layout/Birthday/birthdaywelcome.dart';
 export 'package:myfirstapp/layout/Birthday/birthdayconnect.dart';
 export 'package:myfirstapp/layout/Birthday/birthdaylist.dart';
+export 'package:myfirstapp/layout/Birthday/birthdayadd.dart';

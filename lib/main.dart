@@ -39,8 +39,8 @@ class MyApp extends StatelessWidget {
       //home: MyDeliver(), // Delivery Minute design
       //home: BirthdayHome(), // background & logo
       //home: BirthdayWelcome(), // accueil
-      home: BirthdayConnect(), //connexion
-      //home: BirthdayList(), // liste des anniversaires
+      //home: BirthdayConnect(), //connexion
+      home: BirthdayList(), // liste des anniversaires
     );
   }
 }
