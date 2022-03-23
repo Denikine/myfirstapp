@@ -22,6 +22,7 @@ class _BirthdayWelcomeState extends State<BirthdayWelcome> {
           Container(
             alignment: Alignment.center,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
@@ -51,12 +52,12 @@ class _BirthdayWelcomeState extends State<BirthdayWelcome> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
+                        //crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Row(
                             children: [
                               Text(
-                                'You will ',
+                                'You will',
                                 style: GoogleFonts.baskervville(
                                   textStyle: const TextStyle(
                                     fontSize: 24,
@@ -69,7 +70,7 @@ class _BirthdayWelcomeState extends State<BirthdayWelcome> {
                             ],
                           ),
                           Text(
-                            'remember ',
+                            'remember',
                             style: GoogleFonts.baskervville(
                               textStyle: const TextStyle(
                                 backgroundColor:

@@ -38,7 +38,9 @@ class MyApp extends StatelessWidget {
       //home: MyCard6(), // ListView + constructeur nommé separated
       //home: MyDeliver(), // Delivery Minute design
       //home: BirthdayHome(), // background & logo
-      home: BirthdayWelcome(), // background & logo
+      //home: BirthdayWelcome(), // accueil
+      home: BirthdayConnect(), //connexion
+      //home: BirthdayList(), // liste des anniversaires
     );
   }
 }
