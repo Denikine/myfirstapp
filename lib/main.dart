@@ -41,6 +41,7 @@ class MyApp extends StatelessWidget {
       //home: BirthdayWelcome(), // accueil
       //home: BirthdayConnect(), //connexion
       home: BirthdayList(), // liste des anniversaires
+      //home: BirthdayAdd(),
     );
   }
 }
